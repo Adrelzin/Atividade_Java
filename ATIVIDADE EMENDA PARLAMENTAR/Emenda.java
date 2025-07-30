@@ -1,15 +1,15 @@
 import java.util.List;
 import java.util.HashMap;
 
-public class Emenda {
-    private int id;
-    private String autor;
-    private double valorTotal;
-    private int ano;
-    private String tipo;
-    private List<Documento> documentos;
-    private HashMap<String, String> convenios;
-    private HashMap<String, String> acordos;
+public abstract class Emenda {
+    protected int id;
+    protected String autor;
+    protected double valorTotal;
+    protected int ano;
+    protected String tipo;
+    protected List<Documento> documentos;
+    protected HashMap<String, String> convenios;
+    protected HashMap<String, String> acordos;
     
     public Emenda(int id, String autor, double valorTotal, int ano, String tipo, 
                   List<Documento> documentos, HashMap<String, String> convenios, 
